@@ -172,7 +172,4 @@ git clone https://github.com/yourusername/ai-data-analyst.git
 cd ai-data-analyst
 pip install -r requirements.txt
 streamlit run app.py
-```
-
----
 
