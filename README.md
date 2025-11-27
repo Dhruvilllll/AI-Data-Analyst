@@ -179,9 +179,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Name - Dhruvil Malvania
 
-Project Link: [https://github.com/yourusername/ai-data-analyst](https://github.com/yourusername/ai-data-analyst)
+Email: [dhruvilmalvania12@gmail.com](dhruvilmalvania12@gmail.com)
 
 ---
 
