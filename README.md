@@ -183,6 +183,3 @@ Name - Dhruvil Malvania
 
 Email: [dhruvilmalvania12@gmail.com](dhruvilmalvania12@gmail.com)
 
----
-
-<p align="center">Made with ❤️ and Python</p>
