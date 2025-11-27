@@ -176,4 +176,3 @@ streamlit run app.py
 
 ---
 
-**Built with ❤️ by the community, for the community**
