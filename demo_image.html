@@ -10,17 +10,18 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            /* Changed body background from pink gradient to light gray/white-ish */
+            background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
             padding: 20px;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
+
         .container {
             background: white;
             border-radius: 12px;
@@ -29,16 +30,17 @@
             width: 100%;
             overflow: hidden;
         }
-        
+
         .header {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            /* Changed header background from pink gradient to dark blue gradient */
+            background: linear-gradient(135deg, #1a237e 0%, #0d133b 100%);
             color: white;
             padding: 25px 30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        
+
         .header h1 {
             font-size: 28px;
             font-weight: 600;
@@ -46,14 +48,14 @@
             align-items: center;
             gap: 12px;
         }
-        
+
         .header .subtitle {
             opacity: 0.9;
             font-size: 14px;
             font-weight: 300;
             margin-top: 5px;
         }
-        
+
         .badge {
             background: rgba(255,255,255,0.2);
             padding: 6px 14px;
@@ -61,40 +63,43 @@
             font-size: 13px;
             font-weight: 500;
         }
-        
+
         .content {
             display: grid;
             grid-template-columns: 350px 1fr;
             min-height: 600px;
         }
-        
+
         .sidebar {
             background: #f8f9fa;
             padding: 25px;
             border-right: 1px solid #e0e0e0;
         }
-        
+
         .sidebar h3 {
             color: #333;
             font-size: 16px;
             margin-bottom: 15px;
             font-weight: 600;
         }
-        
+
         .file-upload {
             background: white;
-            border: 2px dashed #f093fb;
+            /* Changed dashed border color from pink to light blue */
+            border: 2px dashed #4f5b93;
             border-radius: 8px;
             padding: 20px;
             text-align: center;
             margin-bottom: 25px;
         }
-        
+
         .file-upload .icon {
             font-size: 40px;
             margin-bottom: 10px;
+            /* Added color to icon for dark blue theme */
+            color: #1a237e; 
         }
-        
+
         .file-name {
             background: #e8f5e9;
             color: #2e7d32;
@@ -104,11 +109,11 @@
             margin-top: 10px;
             font-weight: 500;
         }
-        
+
         .suggestions {
             margin-top: 20px;
         }
-        
+
         .suggestion-item {
             background: white;
             padding: 12px 15px;
@@ -116,33 +121,36 @@
             border-radius: 6px;
             font-size: 13px;
             color: #555;
-            border-left: 3px solid #f093fb;
+            /* Changed border-left color from pink to light blue */
+            border-left: 3px solid #4f5b93;
             cursor: pointer;
             transition: all 0.2s;
         }
-        
+
         .suggestion-item:hover {
-            background: #fff0f5;
+            /* Changed hover background color from light pink to light blue */
+            background: #f0f4ff; 
             transform: translateX(5px);
         }
-        
+
         .suggestion-item.active {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            /* Changed active background from pink gradient to dark blue gradient */
+            background: linear-gradient(135deg, #1a237e 0%, #0d133b 100%);
             color: white;
             font-weight: 500;
         }
-        
+
         .main-area {
             padding: 30px;
         }
-        
+
         .prompt-section {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 25px;
         }
-        
+
         .prompt-label {
             color: #666;
             font-size: 13px;
@@ -151,29 +159,31 @@
             letter-spacing: 0.5px;
             margin-bottom: 10px;
         }
-        
+
         .prompt-text {
             background: white;
             padding: 15px;
             border-radius: 6px;
             font-size: 15px;
             color: #333;
-            border-left: 4px solid #f093fb;
+            /* Changed border-left color from pink to light blue */
+            border-left: 4px solid #4f5b93;
         }
-        
+
         .llm-badge {
             display: inline-block;
-            background: #fff3cd;
-            color: #856404;
+            background: #e3f2fd; /* Changed from yellow to light blue/yellow mix for warning */
+            color: #1a237e; /* Changed from dark yellow to dark blue */
             padding: 4px 10px;
             border-radius: 4px;
             font-size: 11px;
             font-weight: 600;
             margin-top: 10px;
         }
-        
+
         .run-button {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            /* Changed button background from pink gradient to dark blue gradient */
+            background: linear-gradient(135deg, #1a237e 0%, #0d133b 100%);
             color: white;
             border: none;
             padding: 12px 30px;
@@ -184,28 +194,28 @@
             margin-top: 15px;
             transition: transform 0.2s;
         }
-        
+
         .run-button:hover {
             transform: scale(1.05);
         }
-        
+
         .results {
             margin-top: 30px;
         }
-        
+
         .results-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
         }
-        
+
         .results-header h2 {
             color: #333;
             font-size: 20px;
             font-weight: 600;
         }
-        
+
         .success-badge {
             background: #e8f5e9;
             color: #2e7d32;
@@ -214,7 +224,7 @@
             font-size: 13px;
             font-weight: 600;
         }
-        
+
         .table-container {
             background: white;
             border: 1px solid #e0e0e0;
@@ -223,35 +233,38 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             overflow-x: auto;
         }
-        
+
         .data-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 14px;
         }
-        
+
         .data-table thead {
-            background: linear-gradient(135deg, #f093fb15 0%, #f5576c15 100%);
+            /* Changed table header background from pink gradient to dark blue gradient (low opacity) */
+            background: linear-gradient(135deg, #1a237e15 0%, #0d133b15 100%);
         }
-        
+
         .data-table th {
             padding: 15px 12px;
             text-align: left;
             font-weight: 600;
             color: #333;
-            border-bottom: 2px solid #f093fb;
+            /* Changed border-bottom color from pink to dark blue */
+            border-bottom: 2px solid #1a237e;
         }
-        
+
         .data-table td {
             padding: 12px;
             border-bottom: 1px solid #f0f0f0;
             color: #555;
         }
-        
+
         .data-table tbody tr:hover {
-            background: #fff9fc;
+            /* Changed row hover background from light pink to light blue */
+            background: #f0f4ff;
         }
-        
+
         .rank-badge {
             display: inline-block;
             width: 28px;
@@ -262,35 +275,35 @@
             font-weight: 700;
             font-size: 13px;
         }
-        
+
         .rank-1 {
             background: #ffd700;
             color: #000;
         }
-        
+
         .rank-2 {
             background: #c0c0c0;
             color: #000;
         }
-        
+
         .rank-3 {
             background: #cd7f32;
             color: #fff;
         }
-        
+
         .roi-value {
             font-weight: 700;
             font-size: 16px;
         }
-        
+
         .roi-positive {
             color: #2e7d32;
         }
-        
+
         .roi-medium {
             color: #f57c00;
         }
-        
+
         .channel-badge {
             display: inline-block;
             padding: 4px 10px;
@@ -298,27 +311,28 @@
             font-size: 12px;
             font-weight: 600;
         }
-        
+
+        /* Channel badges colors can remain or be updated to match the new theme */
         .channel-email {
             background: #e3f2fd;
             color: #1565c0;
         }
-        
+
         .channel-social {
             background: #f3e5f5;
             color: #7b1fa2;
         }
-        
+
         .channel-search {
             background: #fff3e0;
             color: #e65100;
         }
-        
+
         .channel-display {
             background: #e8f5e9;
             color: #2e7d32;
         }
-        
+
         .download-button {
             background: #f8f9fa;
             border: 1px solid #ddd;
@@ -329,38 +343,40 @@
             margin-top: 20px;
             transition: all 0.2s;
         }
-        
+
         .download-button:hover {
             background: #e9ecef;
         }
-        
+
         .summary-cards {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 15px;
             margin-bottom: 25px;
         }
-        
+
         .summary-card {
-            background: linear-gradient(135deg, #f093fb15 0%, #f5576c15 100%);
+            /* Changed summary card background from pink gradient to dark blue gradient (low opacity) */
+            background: linear-gradient(135deg, #1a237e15 0%, #0d133b15 100%);
             padding: 20px;
             border-radius: 8px;
             text-align: center;
         }
-        
+
         .summary-value {
             font-size: 28px;
             font-weight: 700;
-            color: #f5576c;
+            /* Changed summary value color from red to dark blue */
+            color: #1a237e;
             margin-bottom: 8px;
         }
-        
+
         .summary-label {
             font-size: 13px;
             color: #666;
             font-weight: 500;
         }
-        
+
         .chart-mini {
             width: 100%;
             height: 60px;
